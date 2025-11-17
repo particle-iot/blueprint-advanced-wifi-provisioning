@@ -1,4 +1,4 @@
-# Title
+# Blueprint Advanced Protected Device WiFi Provisioning
 
 **Difficulty:** Advanced
 
