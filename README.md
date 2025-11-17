@@ -65,7 +65,11 @@ This blueprint provides an example [React](https://react.dev/) application that 
    npm run dev
    ```
 
-5. **Test the provisioning flow**
+---
+
+### Usage
+
+1. **Test the provisioning flow**
 
    1. With a WiFi enabled protected Particle device plugged in, navigate to `localhost:5173` in your Chrome browser (Web USB may not be support on other browsers). Then, choose "Select Device" and select your target device:
       ![Select device](./images/select-device.png)
@@ -76,7 +80,7 @@ This blueprint provides an example [React](https://react.dev/) application that 
    3. Select the network SSID you'd like to connect your device to and you'll be prompted to enter the WiFi password:
       ![Enter password](./images/enter-password.png)
 
-6. **Validate the credentials**
+2. **Validate the credentials**
    You can test that the credentials were properly stored by running: `particle wifi list` in a terminal.
 
 ---
