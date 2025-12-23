@@ -60,6 +60,7 @@ This blueprint provides an example [React](https://react.dev/) application that 
       ![Enter password](./images/enter-password.png)
 
 2. **Validate the credentials**
+
    You can test that the credentials were properly stored by running: `particle wifi list` in a terminal.
    ![Validate networks](./images/wifi-list.png)
 
