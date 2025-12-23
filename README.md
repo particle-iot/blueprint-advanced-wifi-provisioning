@@ -56,7 +56,7 @@ This blueprint provides an example [React](https://react.dev/) application that 
    2. Once paired, click "Scan Networks". At this step, a command will be sent to the device to perform a Wi-Fi scan. Once successful, the list of nearby networks will be displayed in the UI.
       ![Scan networks](./images/scan-networks.png)
 
-   3. Select the network SSID you'd like to connect your device to and you'll be prompted to enter the WiFi password. Once the password is sent to the device, wait a few seconds for the device to retry connection to the network.
+   3. Select the network SSID you'd like to connect your device to and you'll be prompted to enter the WiFi password. Once the password is sent to the device, wait a few seconds for the device to retry connecting to the network.
       ![Enter password](./images/enter-password.png)
 
 2. **Validate the credentials**
