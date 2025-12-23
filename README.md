@@ -68,17 +68,19 @@ This blueprint provides an example [React](https://react.dev/) application that 
 
 ### How It Works
 
-The main UI lives in `client/app/provisioner.jsx` and is responsible for interacting with the Particle device over WebBLE.
+The main UI lives in [client/app/provisioner.jsx](https://github.com/particle-iot-inc/blueprint-advanced-wifi-provisioning/blob/main/client/app/provisioner.tsx) and is responsible for interacting with the Particle device over WebBLE.
 
-You'll notice that it makes use of a `serviceUUID`, `rxCharacteristicUUID`, `txCharacteristicUUID`, `versionCharacteristicUUID`, and a `mobileSecret`. These values are defined in the firmware (`src/main.cpp`) and can be customized. It's best to customize them so that your provisioning tool only works with your hardware.
+You'll notice that it makes use of a `serviceUUID`, `rxCharacteristicUUID`, `txCharacteristicUUID`, `versionCharacteristicUUID`, and a `mobileSecret`. These values are defined in the firmware ([src/main.cpp](https://github.com/particle-iot-inc/blueprint-advanced-wifi-provisioning/blob/main/src/main.cpp)) and can be customized. It's best to update these fields so that your provisioning tool only works with your hardware.
 
-In `client/lib/particleUtils.ts` you'll find most of the BLE logic. It makes heavy use of the [@particle/ecjpake](https://www.npmjs.com/package/@particle/ecjpake) and [@particle/device-os-protobuf](https://www.npmjs.com/package/@particle/device-os-protobuf) libraries in order to properly communicate with Device OS.
+In [client/lib/particleUtils.ts](https://github.com/particle-iot-inc/blueprint-advanced-wifi-provisioning/blob/main/client/lib/particleUtils.ts) you'll find most of the BLE logic. It makes heavy use of the [@particle/ecjpake](https://www.npmjs.com/package/@particle/ecjpake) and [@particle/device-os-protobuf](https://www.npmjs.com/package/@particle/device-os-protobuf) libraries in order to properly communicate with Device OS.
 
-All of the actual BLE interaction happens in a global context provider in `client/hooks/useBluetooth.tsx`. You might start here if you are interested in porting to a mobile environment by swapping WebBLE to a mobile friendly BLE library.
+All of the actual BLE interaction happens in a global context provider in [client/hooks/useBluetooth.tsx](https://github.com/particle-iot-inc/blueprint-advanced-wifi-provisioning/blob/main/client/hooks/useBluetooth.tsx). You might start here if you are interested in porting to a mobile environment by swapping WebBLE to a mobile friendly BLE library.
 
-The `client/components/bleButtons.tsx` component conditionally renders the BLE interaction buttons based on the connection state.
+The [client/components/bleButtons.tsx](https://github.com/particle-iot-inc/blueprint-advanced-wifi-provisioning/blob/main/client/components/bleButtons.tsx) component conditionally renders the BLE interaction buttons based on the connection state.
 
-The `client/components/scanResults.tsx` component renders the list of available SSIDs.
+The [client/components/scanResults.tsx](https://github.com/particle-iot-inc/blueprint-advanced-wifi-provisioning/blob/main/client/components/scanResults.tsx) component renders the list of available SSIDs.
+
+Finally, the [client/components/connectDialog.tsx](https://github.com/particle-iot-inc/blueprint-advanced-wifi-provisioning/blob/main/client/components/connectDialog.tsx) component renders the password input.
 
 ---
 
