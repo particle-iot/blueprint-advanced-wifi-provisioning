@@ -1,31 +1,28 @@
 # blueprint.yaml
-slug: blueprint-template
+slug: blueprint-advanced-wifi-provisioning
 type: Tutorial
-category: "Blueprint Basics"
-expertiseLevel: "Beginner"               # Beginner | Intermediate | Advanced
-tags: ["Publish", "Function", "Console"]
+category: "Device integration and connectivity"
+expertiseLevel: "Advanced"               # Beginner | Intermediate | Advanced
+tags: ["BLE", "WiFi"]
 icon: assets/hero.jpg                    # relative path to an image or SVG
-gitrepo: https://github.com/particle-iot/blueprint-template
-name: "Blueprint Template"
-shortDescription: "A sample template for creating new Blueprints"
+gitrepo: https://github.com/particle-iot/blueprint-advanced-wifi-provisioning
+name: "BLE WiFi Provisioning"
+shortDescription: "How to provision WiFi enabled devices over WebBLE"
 version: 1.0.0                           # use SemVer
 models: []                               # e.g., ["P2", "Boron 404X"]
-language: ["C++"]
+language: ["C++", "Javascript]
 cloudServices: []                        # e.g., ["IFTTT", "Google Sheets"]
 integrations: []                         # e.g., ["Webhook"]
-supportedDevices:
-  - name: Any Wi-Fi or Cellular Device
-    link: https://docs.particle.io
-webIdeLink:
-webSetupLink:
+  - name: Argon
+  - name: M-SoM
+  - name: Photon 2
+  - name: Muon
+  - name: P2
+  - name: P1
+  - name: Photon
 hardwareDependencies:
   - name: Supported device
   - name: USB cable
 introduction: |
-  Quickstart blueprint.
-description: |
-  This tutorial shows how to create a new blueprint.
-additionalResources:
-  - title: Particle Dev Docs
-    link: https://developer.particle.io/
+  This blueprint provides an example React application that uses WebBLE to provision network credentials for WiFi enabled Particle devices. 
 
