@@ -4,7 +4,7 @@
 
 **Estimated Time:** 1 hour
 
-**Hardware Needed:** None
+**Hardware Needed:** WiFi Particle devices
 
 ---
 
