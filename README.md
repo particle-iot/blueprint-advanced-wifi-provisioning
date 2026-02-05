@@ -50,13 +50,13 @@ This blueprint provides an example [React](https://react.dev/) application that 
 
 1. **Test the provisioning flow**
 
-   1. With a nearby WiFi capable Particle device powered on, navigate to `localhost:8081` in your Chrome browser (Web BLE may not be support on other browsers). Then, choose "Connect" and select your target device:
+   - With a nearby WiFi capable Particle device powered on, navigate to `localhost:8081` in your Chrome browser (Web BLE may not be support on other browsers). Then, choose "Connect" and select your target device:
       ![Connect](./images/connect.png)
 
-   2. Once paired, click "Scan Networks". At this step, a command will be sent to the device to perform a Wi-Fi scan. Once successful, the list of nearby networks will be displayed in the UI.
+   - Once paired, click "Scan Networks". At this step, a command will be sent to the device to perform a Wi-Fi scan. Once successful, the list of nearby networks will be displayed in the UI.
       ![Scan networks](./images/scan-networks.png)
 
-   3. Select the network SSID you'd like to connect your device to and you'll be prompted to enter the WiFi password. Once the password is sent to the device, wait a few seconds for the device to retry connecting to the network.
+   - Select the network SSID you'd like to connect your device to and you'll be prompted to enter the WiFi password. Once the password is sent to the device, wait a few seconds for the device to retry connecting to the network.
       ![Enter password](./images/enter-password.png)
 
 2. **Validate the credentials**
