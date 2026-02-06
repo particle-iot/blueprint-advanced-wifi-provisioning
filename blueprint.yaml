@@ -13,11 +13,17 @@ models: []                               # e.g., ["P2", "Boron 404X"]
 language: ["C++", "Javascript"]
 cloudServices: []                        # e.g., ["IFTTT", "Google Sheets"]
 integrations: []                         # e.g., ["Webhook"]
+supportedDevices:
   - name: Argon
+    link: https://docs.particle.io/reference/datasheets/wi-fi/argon-datasheet/
   - name: M-SoM
+    link: https://docs.particle.io/reference/datasheets/m-series/msom-datasheet/
   - name: Photon 2
+    link: https://docs.particle.io/reference/datasheets/wi-fi/photon-2-datasheet/
   - name: Muon
+    link: https://docs.particle.io/reference/datasheets/m-series/muon-datasheet/
   - name: P2
+    link: https://docs.particle.io/reference/datasheets/wi-fi/p2-datasheet/
   - name: P1
   - name: Photon
 hardwareDependencies:
