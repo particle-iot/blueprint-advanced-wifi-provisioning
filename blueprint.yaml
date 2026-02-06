@@ -25,10 +25,12 @@ supportedDevices:
   - name: P2
     link: https://docs.particle.io/reference/datasheets/wi-fi/p2-datasheet/
   - name: P1
+    link: https://docs.particle.io/datasheets/wi-fi/p1-datasheet/
   - name: Photon
+    link: https://docs.particle.io/datasheets/wi-fi/photon-datasheet/
 hardwareDependencies:
   - name: Supported device
   - name: USB cable
 introduction: |
-  This blueprint provides an example React application that uses WebBLE to provision network credentials for WiFi enabled Particle devices. 
+  This blueprint provides an example React application that uses WebBLE to provision network credentials for WiFi enabled Particle devices.
 
